@@ -11,9 +11,9 @@ public class StringCoder
  * @return the string obtained by concatenating the parts of the master string
  */
  public String decodeString(ArrayList<StringPart> parts){
+  for (int i = 0 ; i < parts.size(); i ++){
+   System.out.print(parts.get(i));
    
- 
- 
  }
  /** @param str the string to encode using the master string
  * Precondition: all of the characters in str appear in the master string;
@@ -29,5 +29,11 @@ public class StringCoder
  * @return an ArrayList of string parts of the master string that can be combined
  * to create word
  */
- public ArrayList<StringPart> encodeString(String word)
- { /* to be implemented in part (b) */ } 
+ public ArrayList<StringPart> encodeString(String word){
+  ArrayList<StringPart> a = new ArrayList<StringPart>(1,word.length()-1);
+   for( int i = 0, i < a.size(); i ++){
+    a [i][0] = find.(word); 
+   
+   
+  }
+ } 
