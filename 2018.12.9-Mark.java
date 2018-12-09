@@ -30,9 +30,9 @@ public class StringCoder
  * to create word
  */
  public ArrayList<StringPart> encodeString(String word){
-  ArrayList<StringPart> a = new ArrayList<StringPart>(1,word.length()-1);
-   for( int i = 0, i < a.size(); i ++){
-    a [i][0] = find.(word); 
+  ArrayList<StringPart> a = new ArrayList<StringPart>(word.length()-1);
+   for( int i = 0, i < a.size(); i++){
+    a.get(find.(word));
    
    
   }
