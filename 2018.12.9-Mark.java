@@ -11,8 +11,13 @@ public class StringCoder
  * @return the string obtained by concatenating the parts of the master string
  */
  public String decodeString(ArrayList<StringPart> parts){
-  for (int i = 0 ; i < parts.size(); i ++){
-   System.out.print(parts.get(i));
+  String temp = "";
+  for (int i = 0 ; i < parts.size() ; i ++){
+      int a = parts.getStart(i);
+      int b = parts.getLength(i);
+      temp = materString.substring(a,a+b);
+  }
+  return temp;
    
  }
  /** @param str the string to encode using the master string
@@ -30,10 +35,10 @@ public class StringCoder
  * to create word
  */
  public ArrayList<StringPart> encodeString(String word){
-  ArrayList<StringPart> a = new ArrayList<StringPart>(word.length()-1);
-   for( int i = 0, i < a.size(); i++){
-    a.get(find.(word));
-   
-   
+  ArrayList<StringPart> a = new ArrayList<StringPart>();
+  while (word.length() != 0){
+    a.add(findPart.(word));
+    word = word.substring(getLength.(findPart.(word)));
   }
- } 
+  return a;
+  } 
