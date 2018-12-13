@@ -38,7 +38,7 @@ public class StringCoder
   ArrayList<StringPart> a = new ArrayList<StringPart>();
   while (word.length() != 0){
     a.add(findPart.(word));
-    word = word.substring(getLength.(findPart.(word)));
+    word = word.substring((findPart.(word)).getLength());
   }
   return a;
   } 
