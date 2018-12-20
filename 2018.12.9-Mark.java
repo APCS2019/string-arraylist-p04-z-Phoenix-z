@@ -13,8 +13,8 @@ public class StringCoder
  public String decodeString(ArrayList<StringPart> parts){
   String temp = "";
   for (int i = 0 ; i < parts.size() ; i ++){
-      int a = parts.getStart(i);
-      int b = parts.getLength(i);
+      int a = parts.get(i).getStart();
+      int b = parts.get(i).getLength();
       temp = materString.substring(a,a+b);
   }
   return temp;
